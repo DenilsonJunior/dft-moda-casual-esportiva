@@ -1,0 +1,100 @@
+.categoriesTemplate {
+  width: 100%;
+  padding: 2vw 0 0;
+}
+@media (max-width: 768px) {
+  .categoriesTemplate {
+    padding: 0 0rem 3vw;
+  }
+}
+.categoriesTemplate .boxFlex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1vw;
+  flex-wrap: wrap;
+  background-color: #E9E9E9;
+  padding: 5vw 3vw;
+}
+@media (max-width: 768px) {
+  .categoriesTemplate .boxFlex {
+    flex-wrap: nowrap;
+    gap: 3vw;
+    justify-content: start;
+    overflow-x: auto;
+    padding: 2rem 1rem;
+  }
+}
+.categoriesTemplate .boxFlex::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.categoriesTemplate .boxFlex .card {
+  width: calc(16.6666666667% - 0.9vw);
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 2.2vw;
+}
+@media (max-width: 768px) {
+  .categoriesTemplate .boxFlex .card {
+    border-radius: 3vw;
+    width: auto;
+  }
+}
+.categoriesTemplate .boxFlex .card:hover .boxImg img {
+  transform: scale(1.05);
+}
+.categoriesTemplate .boxFlex .card:hover .boxText {
+  background-color: black;
+}
+.categoriesTemplate .boxFlex .card:hover .boxText h3 {
+  color: white;
+}
+.categoriesTemplate .boxFlex .card .boxImg {
+  overflow: hidden;
+  position: relative;
+  border-radius: 2.2vw 2.2vw 0 0;
+}
+@media (max-width: 768px) {
+  .categoriesTemplate .boxFlex .card .boxImg {
+    border-radius: 3vw 3vw 0 0;
+  }
+}
+.categoriesTemplate .boxFlex .card .boxImg img {
+  transition-duration: 0.3s;
+  position: relative;
+  display: block;
+  width: 100%;
+  filter: grayscale(0);
+}
+@media (max-width: 768px) {
+  .categoriesTemplate .boxFlex .card .boxImg img {
+    width: 34vw;
+  }
+}
+.categoriesTemplate .boxFlex .card .boxText {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 0 0 2.2vw 2.2vw;
+}
+@media (max-width: 768px) {
+  .categoriesTemplate .boxFlex .card .boxText {
+    border-radius: 0 0 3vw 3vw;
+  }
+}
+.categoriesTemplate .boxFlex .card .boxText h3 {
+  color: black;
+  text-transform: uppercase;
+  padding: 0.8vw 0.8vw 1vw;
+  font-size: 1.4vw;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .categoriesTemplate .boxFlex .card .boxText h3 {
+    padding: 2.5vw 1vw;
+    font-size: 2.8vw;
+  }
+}
+/*# sourceMappingURL=categories.css.map */
